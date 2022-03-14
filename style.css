@@ -1,0 +1,16 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;500;600;700;800;900&display=swap');
+
+/* variable */
+:root{
+    /* media break point */
+    --mobile-bp : 768 px;
+    --desktop-bp : 992 px;
+    /* colors */
+    --blue : #0065FC;
+    --light-blue : #DEEBFF;
+    --gray :#F2F2F2;
+}
+body{
+    background: #000;
+}
