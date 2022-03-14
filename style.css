@@ -4,12 +4,14 @@
 /* variable */
 :root{
     /* media break point */
-    --mobile-bp : 768 px;
-    --desktop-bp : 992 px;
+    --mobile-bp : 768px;
+    --desktop-bp : 992px;
     /* colors */
     --blue : #0065FC;
     --light-blue : #DEEBFF;
     --gray :#F2F2F2;
+    /* font size*/
+    --fs: 16px;
 }
 /* set */
 *{
@@ -18,9 +20,9 @@
     box-sizing: border-box;
     list-style-type: none;
     text-decoration: none;
+    font-family: 'Raleway', sans-serif;
 }
 body{
-    font-family: 'Raleway', sans-serif;
     font-weight: 300;
     background: white;
     color: black;
@@ -31,8 +33,10 @@ a{
 a:hover,a:visited,a:active{
     text-decoration: none;
 }
-
-h2,h3{
+h2,p{
+    margin-bottom: 5px;
+}
+h2,h3,input{
     font-weight: 600;
     font-size: 16px;
 }
@@ -41,16 +45,14 @@ nav,header,main{
 }
  /* nav style */
 nav{
-    display: inline-block;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 110px;
 }
 nav a img{
-    /* width: 100px;
-    height: 45px; */
-    width: 55%;
+    width: 113.297px;
+    height: 53.391px;
     margin-left: 15px
 }
 nav ul{
@@ -58,11 +60,48 @@ nav ul{
     justify-content: space-between;
     align-items: center;
 }
-nav ul li a {
-    /* padding-top: 100%; */
-    padding: 42px 15px
+nav ul a {
+    padding: 42px 15px;
 }
 .active{
     color: var(--blue);
     border-top: 5px solid var(--blue);
+}
+
+/* form location*/
+
+form{
+    display: flex;
+    flex-wrap: nowrap;
+    height: 52px;
+    margin: 15px 0;
+}
+form label{
+    width: 55px;
+    background-color: var(--gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+form label svg{
+    width: 16.500px;
+}
+form input#location{
+    border: 1px solid var(--gray);
+    padding-left: 5px;
+    outline-style: none;
+    color: black;
+}
+form input#location::placeholder{
+    color: black;
+}
+form input#search{
+    border: none;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: var(--blue);
+    color: white;
+    padding: 0 15px;
 }
