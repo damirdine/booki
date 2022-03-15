@@ -68,15 +68,15 @@ nav ul a {
     border-top: 5px solid var(--blue);
 }
 
-/* form location*/
+/* form location (header)*/
 
-form{
+header form{
     display: flex;
     flex-wrap: nowrap;
     height: 52px;
     margin: 15px 0;
 }
-form label{
+header form label{
     width: 55px;
     background-color: var(--gray);
     display: flex;
@@ -85,23 +85,62 @@ form label{
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
 }
-form label svg{
+header form label svg{
     width: 16.500px;
 }
-form input#location{
+header form input#location{
     border: 1px solid var(--gray);
     padding-left: 5px;
     outline-style: none;
     color: black;
 }
-form input#location::placeholder{
+header form input#location::placeholder{
     color: black;
 }
-form input#search{
+header form input#search{
+    cursor: pointer;
     border: none;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     background-color: var(--blue);
     color: white;
     padding: 0 15px;
+}
+
+/* FILTERS form */
+form#filter {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#filter >* {
+    margin-right: 35px;
+}
+.filter-items input{
+    display: none;
+}
+.filter-items label{
+    cursor: pointer;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--light-blue);
+    border-radius: 50px;
+    height: 50px;
+    padding-right: 15px;
+    margin-bottom: 15px;
+}
+.filter-items label:hover{
+    background-color: var(--blue);
+    color: white;
+    border: 2px solid var(--light-blue);
+}
+.filter-items label svg{
+    width: 56.766px;
+    padding: 12px;
+    border-radius: 66%;
+    background-color: var(--light-blue);
+    max-height: 50px;
+    margin-left: -0.5px;
+    margin-right: 10px;
 }
