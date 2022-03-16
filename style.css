@@ -48,7 +48,7 @@ h3,input{
     font-weight: 600;
     font-size: 16px;
 }
-nav,header,main{
+header,main{
     margin: 0 5%;
 }
 /* layout */
@@ -73,7 +73,7 @@ nav ul{
     justify-content: space-between;
     align-items: center;
 }
-nav ul a {
+nav ul li a{
     padding: 42px 15px;
 }
 .active{
@@ -279,6 +279,29 @@ footer .list-container + .list-container{
 
 /* mobile media */
 @media screen and (max-width:768px){
+    nav{
+        flex-direction: column;
+        margin-bottom: 52px;
+    }
+    nav ul{
+        width: 100%;
+        justify-content: space-between;
+    }
+    nav ul li {
+        padding: 35px;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        /* border: 1px solid green; */
+        border-bottom: 3px solid var(--gray);
+    }
+    nav ul li:nth-child(1){
+        border-bottom: 3px solid var(--blue);
+    }
+    nav ul li a {
+        padding: 0px;
+    }
+    .active{border-top: none;}
     .container1{
         flex-direction: column;
     }
