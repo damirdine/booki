@@ -276,3 +276,24 @@ footer{
 footer .list-container + .list-container{
     margin-left: 100px;
 }
+
+/* mobile media */
+@media screen and (max-width:768px){
+    .container1{
+        flex-direction: column;
+    }
+    .card-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .card--activity{
+        width: 100%;
+    }
+    footer{
+        flex-direction: column;
+    }
+    footer .list-container + .list-container{
+        margin: 0px;
+        padding: 15px 0px;
+    }
+}
